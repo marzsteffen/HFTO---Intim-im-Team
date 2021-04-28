@@ -2,6 +2,11 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background: rgb(240, 240, 240);
+    background: linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(205, 205, 205, 1) 100%);
+}
+
 .header {
     padding-top: 20px;
     display: flex;
@@ -11,7 +16,7 @@ html {
 
 header {
     background-color: gray;
-    background-image: url("Hände.jpg");
+    /* background-image: url("Hände.jpg"); */
     background-size: contain;
 }
 
@@ -30,28 +35,69 @@ h1 {
 }
 
 nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(163, 162, 162);
+}
+
+.navelement {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    overflow: hidden;
-    background-color: rgb(121, 121, 121);
+    font-size: large;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav li {
-    display: inline;
-}
-
-li a {
-    display: inline;
-    margin-right: 150px;
-    margin-left: 150px;
-    color: white;
-    text-align: center;
+.navelement a {
     text-decoration: none;
+    color: white;
 }
 
-li {
+.navelement:hover {
+    background-color: rgb(112, 112, 112);
     color: white;
+}
+
+.heading {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.fans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fan {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.fan .info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.fan .info .infotext {
+    margin: 40px;
+    line-height: 190%;
+}
+
+.fan .bild {
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
