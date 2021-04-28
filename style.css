@@ -3,11 +3,16 @@ html {
 }
 
 .header {
-    background-color: rgb(102, 102, 102);
     padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+header {
+    background-color: gray;
+    background-image: url("Hände.jpg");
+    background-size: contain;
 }
 
 #logo {
@@ -17,7 +22,7 @@ html {
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(87, 87, 87);
     size: 20px;
     font-weight: lighter;
     text-align: right;
