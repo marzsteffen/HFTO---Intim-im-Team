@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Spende-Formular</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="spendeformular">
+        <div class="spendenrythmus">
+            <div class="überschrift">Spendenrythmus auswählen</div>
+            <form>
+                <input type="radio" id="einmalig" name="Spendenrythmus" value="einamlig">
+                <label for="einmalig"> einmalig </label>
+                <input type="radio" id="monatlich" name="Spendenrythmus" value="monatlich">
+                <label for="monatlich"> monatlich </label>
+                <input type="radio" id="jährlich" name="Spendenrythmus" value="jährlich">
+                <label for="jährlich"> jährlich </label><br><br>
+            </form>
+        </div>
+        <div>
+            <div class="überschrift">Betrag auswählen</div>
+            <form>
+                <input class="betrag" type="text" id="betrag" name="betrag"><br><br>
+            </form>
+        </div>
+        <div class="zahlungsart">
+            <div class="überschrift">Zahlungsart auswählen</div>
+            <form>
+                <input type="radio" id="Bankeinzug" name="Zahlungsart" value="Bankeinzug">
+                <label for="Bankeinzug"> Bankeinzug </label>
+                <input type="radio" id="PayPal" name="Zahlungsart" value="PayPal">
+                <label for="PayPal"> PayPal </label>
+                <input type="radio" id="Kreditkarte" name="Zahlungsart" value="Kreditkarte">
+                <label for="Kreditkarte"> Kreditkarte </label>
+                <input type="radio" id="Überweisung" name="Zahlungsart" value="Überweisung">
+                <label for="Überweisung"> Überweisung </label><br><br>
+            </form>
+        </div>
+        <div>
+            <div class="überschrift">Kontoinhaber*in</div>
+            <form>
+                <label for="fname">Vorname:</label>
+                <input class="kontoinhaber" type="text" id="fname" name="fname">
+                <label for="lname">Nachname:</label>
+                <input class="kontoinhaber" type="text" id="lname" name="lname">
+                <label for="eMail">E-Mail:</label>
+                <input class="kontoinhaber" type="text" id="eMail" name="eMail">
+                <label for="strHau">Straße, Hausnummer:</label>
+                <input class="kontoinhaber" type="text" id="strHau" name="strHau">
+                <label for="PLZ">PLZ:</label>
+                <input class="kontoinhaber" type="text" id="PLZ" name="PLZ">
+                <label for="Stadt">Stadt:</label>
+                <input class="kontoinhaber" type="text" id="Stadt" name="Stadt"><br><br>
+            </form>
+        </div>
+        <div>
+            <div class="überschrift">Zahlungsdaten</div>
+            <form>
+                <label for="IBAN">IBAN/Kontonummer:</label>
+                <input class="zahlungsdaten" type="text" id="IBAN" name="IBAN">
+                <label for="BIC">BIC/BLZ:</label>
+                <input class="zahlungsdaten" type="text" id="BIC" name="BIC"><br><br>
+            </form>
+        </div>
+        <div>
+            <form>
+                <input class="spendeButton" type="submit" value="Spenden">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
