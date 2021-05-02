@@ -32,7 +32,7 @@ header {
 }
 
 h1 {
-    color: rgb(87, 87, 87);
+    color: #EBF3F5;
     size: 20px;
     font-weight: lighter;
     width: 30%;
@@ -58,12 +58,12 @@ nav {
 }
 
 .navelement a {
-    color: white;
+    color: #EBF3F5;
 }
 
 .navelement:hover {
-    color: #84a7ba;
     background-color: rgb(112, 112, 112);
+    color: #84a7ba;
 }
 
 .heading {
@@ -124,6 +124,45 @@ footer {
 }
 
 
+/* info.html */
+
+.chefs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.chef {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef .info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    opacity: 0.7;
+}
+
+.chef .info .infotext {
+    margin: 40px;
+    line-height: 230%;
+}
+
+.chef .bild {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef li {
+    list-style-type: square;
+}
+
+
 /* machMit.html */
 
 .machMit {
@@ -152,33 +191,46 @@ footer {
 
 /* spendeFormular.html */
 
+.zurück {
+    display: flex;
+    padding: 20px;
+    color: #EBF3F5;
+}
+
+#zurück {
+    padding-left: 2%;
+    padding-top: 1%;
+    align-items: center;
+    font-style: italic;
+    color: #EBF3F5;
+}
+
 .spendeformular {
-    margin-top: 20px;
+    padding-top: 20px;
     line-height: 3;
     padding-left: 25%;
     padding-right: 25%;
-    ;
     text-align: center;
+    background-color: rgb(206, 206, 206);
 }
 
 .überschrift {
     font-size: larger;
-    background-color: #b3d4e6;
+    background-color: #EBF3F5;
 }
 
-.spenderythmus {
-    display: flex;
-    flex-direction: column;
-}
+.spenderythmus {}
 
 .betrag {
     border: none;
     border-radius: 6px;
+    width: 10%;
 }
 
-.betrag input[type=text]:focus {
+
+/* .betrag input[type=text]:focus {
     border-color: #add0e2;
-}
+} */
 
 .zahlungsart {}
 
@@ -193,8 +245,10 @@ footer {
 }
 
 .spendeButton {
-    background-color: #b8b8b8;
-    border-color: #b8b8b8;
+    background-color: #EBF3F5;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
 }
 
 
