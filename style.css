@@ -1,250 +1,322 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    html {
-        font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: white;
-    }
-    
-    body {
-        background: rgb(240, 240, 240);
-        background: linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(205, 205, 205, 1) 100%);
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .header {
-        padding-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    header {
-        background-color: gray;
-        /* background-image: url("Hände.jpg"); */
-        background-size: contain;
-    }
-    
-    #logo {
-        width: 200px;
-        height: auto;
-        padding-bottom: 40px;
-    }
-    
-    h1 {
-        color: rgb(87, 87, 87);
-        size: 20px;
-        font-weight: lighter;
-        width: 30%;
-    }
-    
-    nav {
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: rgb(163, 162, 162);
-    }
-    
-    .navelement {
-        width: 25%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: large;
-    }
-    
-    .navelement a {
-        color: white;
-    }
-    
-    .navelement:hover {
-        color: #84a7ba;
-        background-color: rgb(112, 112, 112);
-    }
-    
-    .heading {
-        margin-left: 20px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        font-size: xx-large;
-        font-weight: 700;
-    }
-    
-    footer {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(212, 212, 212);
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    
-    .footerelement {
-        text-align: center;
-    }
-    /* index.html */
-    
-    .fans {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .fan {
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-    }
-    
-    .fan .info {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f8f8f8;
-        opacity: 0.7;
-    }
-    
-    .fan .info .infotext {
-        margin: 40px;
-        line-height: 190%;
-    }
-    
-    .fan .bild {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-    /* info.html*/
-    
-    .infomaterial {
-        width: 100%;
-        background-color: white;
-    }
-    
-    #Infomaterial {
-        width: 100%;
-        padding: 20px;
-        margin: auto;
-        font-weight: bold;
-        float: left;
-    }
-    
-    .containerInfo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-        margin: auto;
-    }
-    
-    .infolist {
-        border-left: 5px solid #bfddf1;
-        padding: 5px;
-    }
-    
-    .listitem {
-        font-size: 1.125rem;
-        position: relative;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        line-height: 1.78;
-        list-style-type: none;
-        cursor: pointer;
-        display: block;
-        border-bottom: 2px solid rgb(244, 243, 234);
-        margin: 0px;
-        padding: 16px 48px 16px 20px;
-        text-decoration: none;
-        background: linear-gradient(to right, rgba(191, 221, 241, 1) 50%, rgb(255, 255, 255)50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition-delay: 0.3s;
-        transition-duration: 0.7s;
-    }
-    
-    .listitem:hover {
-        background-position: left;
-    }
-    /* machMit.html */
-    
-    .machMit {
-        justify-content: space-around;
-        margin: 60px;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .links {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
-        text-decoration: none;
-    }
-    
-    .rechts {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
-        text-decoration: none;
-    }
-    /* spendeFormular.html */
-    
-    .spendeformular {
-        margin-top: 20px;
-        line-height: 3;
-        padding-left: 25%;
-        padding-right: 25%;
-        ;
-        text-align: center;
-    }
-    
-    .überschrift {
-        font-size: larger;
-        background-color: #b3d4e6;
-    }
-    
-    .spenderythmus {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .betrag {
-        border: none;
-        border-radius: 6px;
-    }
-    
-    .betrag input[type=text]:focus {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+body {
+    background: rgb(240, 240, 240);
+    background: linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(205, 205, 205, 1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header {
+    background-color: gray;
+    /* background-image: url("Hände.jpg"); */
+    background-size: contain;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+h1 {
+    color: rgb(87, 87, 87);
+    size: 20px;
+    font-weight: lighter;
+    width: 30%;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(163, 162, 162);
+}
+
+.navelement {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+.navelement a {
+    color: white;
+}
+
+.navelement:hover {
+    color: #84a7ba;
+    background-color: rgb(112, 112, 112);
+}
+
+.heading {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerelement {
+    text-align: center;
+}
+
+
+/* index.html */
+
+.fans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fan {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.fan .info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    opacity: 0.7;
+}
+
+.fan .info .infotext {
+    margin: 40px;
+    line-height: 190%;
+}
+
+.fan .bild {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* info.html*/
+
+.infomaterial {
+    width: 100%;
+    background-color: white;
+}
+
+#Infomaterial {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    font-weight: bold;
+    float: left;
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.infolist {
+    border-left: 5px solid #bfddf1;
+    padding: 5px;
+}
+
+.listitem {
+    font-size: 1.125rem;
+    position: relative;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    line-height: 1.78;
+    list-style-type: none;
+    cursor: pointer;
+    display: block;
+    border-bottom: 2px solid rgb(244, 243, 234);
+    margin: 0px;
+    padding: 16px 48px 16px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(191, 221, 241, 1) 50%, rgb(255, 255, 255)50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition-delay: 0.3s;
+    transition-duration: 0.7s;
+}
+
+.listitem:hover {
+    background-position: left;
+}
+
+.chefs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.chef {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef .info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    opacity: 0.7;
+}
+
+.chef .info .infotext {
+    margin: 40px;
+    line-height: 230%;
+}
+
+.chef .bild {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef li {
+    list-style-type: square;
+}
+
+
+/* machMit.html */
+
+.machMit {
+    justify-content: space-around;
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.rechts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+/* spendeFormular.html */
+
+.zurück {
+    display: flex;
+    padding: 20px;
+    color: #EBF3F5;
+}
+
+#zurück {
+    padding-left: 2%;
+    padding-top: 1%;
+    align-items: center;
+    font-style: italic;
+    color: #EBF3F5;
+}
+
+.spendeformular {
+    padding-top: 20px;
+    line-height: 3;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    /* background-color: #cae2ec; */
+    background: rgb(167, 196, 194);
+    background: linear-gradient(155deg, rgba(167, 196, 194, 1) 0%, rgba(202, 226, 236, 1) 100%);
+}
+
+.überschrift {
+    font-size: larger;
+    line-height: 1.5;
+}
+
+.spenderythmus {
+    color: white;
+}
+
+.betrag {
+    border: none;
+    border-radius: 6px;
+    width: 10%;
+}
+
+
+/* .betrag input[type=text]:focus {
         border-color: #add0e2;
-    }
-    
-    .zahlungsart {}
-    
-    .kontoinhaber {
-        border: none;
-        border-radius: 6px;
-    }
-    
-    .zahlungsdaten {
-        border: none;
-        border-radius: 6px;
-    }
-    
-    .spendeButton {
-        background-color: #b8b8b8;
-        border-color: #b8b8b8;
-    }
-    /* @media (max-width: 600px) {
-    .fan {
-        flex-direction: column;
-        background-color: black;
-    }
-} */
+    } */
+
+.zahlungsart {
+    color: white;
+}
+
+.kontoinhaber {
+    border: none;
+    border-radius: 6px;
+}
+
+.zahlungsdaten {
+    border: none;
+    border-radius: 6px;
+}
+
+.spendeButton {
+    background-color: #EBF3F5;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+
+/* @media (max-width: 600px) {
+        .fan {
+            flex-direction: column;
+            background-color: black;
+        }
+    } */
+
+.fan {
+    flex-direction: column;
+    background-color: black;
+}
