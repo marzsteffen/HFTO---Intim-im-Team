@@ -211,12 +211,14 @@ footer {
     padding-left: 25%;
     padding-right: 25%;
     text-align: center;
-    background-color: rgb(206, 206, 206);
+    /* background-color: #cae2ec; */
+    background: rgb(167, 196, 194);
+    background: linear-gradient(155deg, rgba(167, 196, 194, 1) 0%, rgba(202, 226, 236, 1) 100%);
 }
 
 .überschrift {
     font-size: larger;
-    background-color: #EBF3F5;
+    line-height: 1.5;
 }
 
 .spenderythmus {}
