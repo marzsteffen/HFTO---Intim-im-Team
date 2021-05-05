@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    background: rgb(240, 240, 240);
-    background: linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(205, 205, 205, 1) 100%);
+    background: rgb(244, 244, 244);
+    background: linear-gradient(155deg, rgba(244, 244, 244, 1) 0%, rgba(243, 252, 255, 1) 100%);
 }
 
 a {
@@ -117,8 +117,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
+    background-color: #ebebeb;
     opacity: 0.7;
+    border-style: double;
+    border-color: rgb(184, 184, 184);
 }
 
 .fan .info .infotext {
@@ -145,7 +147,7 @@ footer {
 
 .infomaterial {
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     padding-bottom: 40px;
 }
 
@@ -214,7 +216,7 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-color: #f8f8f8;
+    background-color: #bfddf133;
     opacity: 0.7;
 }
 
@@ -236,25 +238,24 @@ footer {
 /* machMit.html */
 
 .machMit {
-    justify-content: space-around;
-    margin: 60px;
     display: flex;
+    width: 100%;
     flex-direction: row;
 }
 
 .links {
     display: flex;
+    width: 50%;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
     text-decoration: none;
 }
 
 .rechts {
     display: flex;
+    width: 50%;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
     text-decoration: none;
 }
 
@@ -315,17 +316,18 @@ footer {
 
 .links {
     width: 50%;
+    align-items: center;
 }
 
 .rechts {
     width: 50%;
+    align-items: center;
 }
 
 .kontoinhaber {
     display: flex;
     border: none;
     border-radius: 6px;
-    justify-content: center;
 }
 
 .kontoinhabertext {
