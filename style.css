@@ -241,11 +241,14 @@ footer {
     display: flex;
     width: 100%;
     flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(169, 223, 220, 0.432);
 }
 
 .links {
     display: flex;
-    width: 50%;
+    width: 5%;
     flex-direction: column;
     text-align: center;
     text-decoration: none;
@@ -253,7 +256,7 @@ footer {
 
 .rechts {
     display: flex;
-    width: 50%;
+    width: 5%;
     flex-direction: column;
     text-align: center;
     text-decoration: none;
