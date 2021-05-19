@@ -242,8 +242,9 @@ footer {
 
 .zurück {
     display: flex;
-    padding: 20px;
+    align-items: center;
     color: #979797;
+    padding: 1%;
 }
 
 #zurück {
