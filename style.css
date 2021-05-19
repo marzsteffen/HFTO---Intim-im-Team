@@ -102,9 +102,9 @@ footer {
 }
 
 .fans {
-    width: 100%;
+    width: auto;
+    margin: 50px;
     display: flex;
-    flex-direction: column;
 }
 
 .fan {
