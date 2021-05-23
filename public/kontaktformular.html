@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Kontakt</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="../resources/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="zurück">
+        <a href="index.html">
+            <span style="font-size: 60px; color: #979797;"><i class="fas fa-chevron-circle-left"></i></a></span><br>
+            <p id="zurück">Zurück zur Website</p>
+    </header>
+    <div class="kontaktformular">
+        <h2>Nehmen Sie Kontakt mit uns auf</h2>
+        <hr>
+        <form>
+            <label for="vorname"> Vorname:</label> <br>
+            <input style="border-radius: 8px; border-color:#959595; padding: 8px;" type=" text " id="vorname " name="vorname "><br> <br>
+            <label for="nachname "> Nachname:</label> <br>
+            <input style="border-radius: 8px; border-color:#959595; padding: 8px;" type="text " id="nachname " name="nachname "><br><br>
+            <label for="email "> E-Mail:</label><br>
+            <input style="border-radius: 8px; border-color:#959595; padding: 8px;" type="email " id="email " name="email "><br><br>
+            <p>Bitte wählen sie einen Betreff:</p>
+            <select id="Kontaktgrund" name="Kontaktgrund" style="border-radius: 8px; border-color:#959595; padding: 8px; font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <option value="Anfrage" style="font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Anfrage</option>
+            <option value="Kundenservice" style="font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Kundenservice</option>
+            <option value="Beschwerde" style="font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Beschwerde</option>
+            <option value="Sonstiges" style="font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Sonstiges</option>
+            
+            </select>
+            <br>
+            <br>
+            <textarea id="nachricht">Hier Nachricht eingeben...</textarea><br><br>
+
+            <input type="submit " value="Submit" id="submitButton">
+        </form>
+    </div>
+
+
+</body>
