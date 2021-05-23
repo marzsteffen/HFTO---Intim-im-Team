@@ -290,15 +290,18 @@ footer {
 
 .links {
     width: 50%;
+    margin: 10px;
     align-items: center;
 }
 
 .rechts {
     width: 50%;
+    margin: 10px;
     align-items: center;
 }
 
 .kontoinhaber {
+    width: 100%;
     display: flex;
     border: none;
     border-radius: 6px;
