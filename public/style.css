@@ -267,6 +267,13 @@ footer {
     color: rgb(58, 58, 58);
 }
 
+@media screen and (max-width: 1000px) {
+    .spendeformular {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
 .überschrift {
     font-size: larger;
     line-height: 1.5;
@@ -314,8 +321,16 @@ footer {
 }
 
 .zahlungsdaten {
+    width: 100%;
+    display: flex;
     border: none;
     border-radius: 6px;
+}
+
+.zalungsdatentext {
+    display: flex;
+    text-align: left;
+    justify-content: center;
 }
 
 .spendeButton {
