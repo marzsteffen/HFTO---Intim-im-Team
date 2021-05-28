@@ -362,7 +362,7 @@ kontaktformular.html */
     border-radius: 6px;
 }
 
-#submitButton {
+.submit {
     background-color: #959595;
     border-radius: 8px;
     border: none;
@@ -374,4 +374,7 @@ kontaktformular.html */
     font-size: larger;
     color: white;
     margin-bottom: 5%;
+}
+
+
 }
