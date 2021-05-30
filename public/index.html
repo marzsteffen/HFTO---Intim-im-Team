@@ -3,19 +3,18 @@
 
 <head>
     <title>Home</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/f40cc8c9ec.js" crossorigin="anonymous"></script>
 
-    <!-- "sass --watch custom.scss:custom.css"  Befehl für Powershell zum dauernden Ändern von scss zu css. 
-        @Sina hier ein toturial https://www.youtube.com/watch?v=ctJIeiL0sWY  
-        Falls sass --watch nicht ausgeführt werden kann, powershell als admin öffnen und dann "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned " eingeben und für alle ausführen -->
+
 </head>
 
 <body>
     <header class="header">
-        <img src="img/Logo Rund.png" alt="LOGO" id="logo">
+        <img src="img/LogoRund.png" alt="LOGO" id="logo">
         <h1>HFTP - Health for the People</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #84a7ba">
@@ -24,35 +23,36 @@
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-3 justify-content-between w-100 h4 ">
-                    <li class="nav-item px-2 ">
-                        <a class="nav-link active" aria-current="page " href="index.html ">Home</a>
+                <ul class="navbar-nav mx-3 justify-content-between w-100 h4">
+                    <li class="nav-item  px-2 ">
+                        <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle " href="# " id="navbarDropdownMenuLink " role="button " data-bs-toggle="dropdown " aria-expanded="false ">
+                    <li class="nav-item dropdown  px-2 ">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Info
                 </a>
-                        <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink ">
-                            <li><a class="dropdown-item " href="infomaterial.html ">Infomaterial</a></li>
-                            <li><a class="dropdown-item " href="ueberUns.html ">Über Uns</a></li>
+                        <ul class="dropdown-menu " style="background-color: #dadada" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item text-black" href="infomaterial.html">Infomaterial</a></li>
+                            <li><a class="dropdown-item text-black" href="ueberUns.html">Über Uns</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item px-2 ">
-                        <a class="nav-link " href="aktuelles.html ">Aktuelles</a>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link text-dark" href="aktuelles.html">Aktuelles</a>
                     </li>
 
-                    <li class="nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle " href="# " id="navbarDropdownMenuLink " role="button " data-bs-toggle="dropdown " aria-expanded="false ">
+                    <li class="nav-item dropdown  px-2">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Mithelfen
                 </a>
-                        <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink ">
-                            <li><a class="dropdown-item " href="spendeFormular.html ">Spendeformular</a></li>
-                            <li><a class="dropdown-item " href="jobangebote.html ">Jobangebote</a></li>
+                        <ul class="dropdown-menu " style="background-color: #dadada" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item text-black" href="spendeFormular.html">Spendeformular</a></li>
+                            <li><a class="dropdown-item text-black" href="jobangebote.html">Jobangebote</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
+
     </nav>
     <div class="container px-4 px-lg-5 ">
         <div class="row gx-4 gx-lg-5 align-items-center my-5 ">
@@ -104,11 +104,48 @@
             </div>
         </div>
     </div>
+    <div class="container px-4 px-lg-5 py-5">
+        <h3 style="text-align: center;">Zehn Handlungsempfehlunhen zur Digitalisierung im Gesundheitswesen</h3>
+        <hr>
+        <table class="table py-2">
+            <tr>
+                <td style="text-align:center">
+                    <h5>Unternehmen</h5>
+                </td>
+                <td style="text-align:center">
+                    <h5>Akteure</h5>
+                </td>
+                <td style="text-align:center">
+                    <h5>Politik</h5>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Priorisierung der Digitalisierung in den Unternehmen</td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Einführung der elektronischen Patientenakte</td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Entwicklung einer nationalen E-Health-Strategie</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Erhöhung der Investitionen in die Digitalisierung in der Medizintechnik und in den Krankenhäusern</td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Vereinfachung der Zulassungsprozesse für neue, digitale Produkte</td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Entwicklung eines Infrastrukturprogramms</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"></td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Entwicklung schneller und transparenter Prozesse zur Erstattung digitaler Produkte</td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Festsetzung technischer Mindestanforderungen, die Interoperabilität fördern</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"></td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Förderung digitaler Modellprojekte durch eine zentrale Informationsplattform und Überführung in die Regelversorgung</td>
+                <td style="text-align:center"><i class="fas fa-circle" style="color:#b4ddf1"></i><br>Schaffung eines einheitlichen deutschen Datenschutzstandards</td>
+            </tr>
+        </table>
+    </div>
     <h1 class="px-5 w-100 ">Das sagen unsere Fans</h1>
     <div class="fans px-4 px-lg-5 ">
         <div class="row row-cols-1 row-cols-md-2 g-4 col-sm-6 w-100 ">
             <div class="col ">
-                <div class="card ">
+                <div class="card">
                     <img src="img/fan1.jpg " class="card-img-top " alt="FanBild ">
                     <div class="card-body ">
                         <h5 class="card-title ">Jospeph Gonzales</h5>
@@ -143,9 +180,6 @@
         <div class="footerelement "><a href="kontaktformular.html "> Kontakt</a></div>
         <div class="footerelement ">Datenschutz</div>
     </footer>
-
-
-
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.6.1/firebase-app.js "></script>

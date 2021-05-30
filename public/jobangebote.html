@@ -14,53 +14,131 @@
 </head>
 
 <body>
-    <header class="zurück">
-        <a href="index.html">
-            <span style="font-size: 60px; color: #979797;"><i class="fas fa-chevron-circle-left"></i></a></span><br>
-            <p id="zurück">Zurück zur Website</p>
+    <header class="header">
+        <img src="img/LogoRund.png" alt="LOGO" id="logo">
+        <h1>HFTP - Health for the People</h1>
     </header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #84a7ba">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-3 justify-content-between w-100 h4">
+                    <li class="nav-item  px-2 ">
+                        <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown  px-2 ">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Info
+                </a>
+                        <ul class="dropdown-menu " style="background-color: #dadada" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item text-black" href="infomaterial.html">Infomaterial</a></li>
+                            <li><a class="dropdown-item text-black" href="ueberUns.html">Über Uns</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link text-dark" href="aktuelles.html">Aktuelles</a>
+                    </li>
 
-    <div class="container-fluid">
+                    <li class="nav-item dropdown  px-2">
+                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mithelfen
+                </a>
+                        <ul class="dropdown-menu " style="background-color: #dadada" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item text-black" href="spendeFormular.html">Spendeformular</a></li>
+                            <li><a class="dropdown-item text-black" href="jobangebote.html">Jobangebote</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container-fluid ">
         <div class="row">
             <div class="col-lg w-50">
-                <img class="w-50 pt-4" src="img/Deutschland.jpg">
+                <img class="w-50 pt-4" src="img/Deutschland.jpg" alt="Frau im Krankenhaus">
                 <div class="fs-2">Stellenangebote in Deutschland</div>
                 <div class="fs-5 fst-italic">bei Health for The People</div>
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">mehr anzeigen</a>
-                <div class="collapse multi-collapse" id="collapseExample1">
-                    <div class="card-body">
-                        <div class="card h-100 w-100 my-3 py-2 px-2">
-                            <h5>IT - Supporter</h5>
-                            <ul>
-                                <li>Gefragter Ansprechpartner der End-User</li>
-                                <li>Zusammenarbeit mit den Vertriebspartnern anderer Länden</li>
-                            </ul>
+                <a class="btn btn-primary mt-4" data-bs-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">mehr anzeigen</a>
+                <div class="collapse multi-collapse" id="multiCollapse1">
+                    <p class="mb-1 px-3">
+                        <div class="card-body">
+                            <div class="containerInfo2">
+                                <div class="infolist">
+                                    <div class="card h-100 w-100 my-3 py-2 px-2">
+                                        <h5>IT - Supporter</h5>
+                                        <ul class="listitem">
+                                            <li>Gefragter Ansprechpartner der End-User</li>
+                                            <li>Zusammenarbeit mit den Vertriebspartnern anderer Länden</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card h-100 w-100 my-3 py-2 px-2">
+                                        <h5>IT- Healthcare Spezialist</h5>
+                                        <ul class="listitem">
+                                            <li>Beratung und Schulung der Anwende</li>
+                                            <li>Leitung von (Teil-)Projekten</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card h-100 w-100 my-3 py-2 px-2">
+                                        <h5>Projektbetreuer E-Health Medication</h5>
+                                        <ul class="listitem">
+                                            <li>Planung und Begleitung der Einführung einer systemübergreifenden elektronischen Medikationslösung in unseren Klinikstandorten</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a class="btn btn-primary mt-4" data-bs-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">weniger anzeigen</a>
+
+                            </div>
                         </div>
-                        <div class="card h-100 w-100 my-3 py-2 px-2">
-                            <h5>IT- Healthcare Spezialist</h5>
-                            <ul>
-                                <li>Beratung und Schulung der Anwende</li>
-                                <li>Leitung von (Teil-)Projekten</li>
-                            </ul>
+                </div>
+            </div>
+            <div class="col-lg">
+                <img class="w-50 pt-4" src="img/Ausland.jpg" alt="Krankenhaus im Ausland">
+                <div class="fs-2">Stellenangebote im Ausland</div>
+                <div class="fs-5 fst-italic">bei Health for The People</div>
+                <a class="btn btn-primary mt-4" data-bs-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2">mehr anzeigen</a>
+                <div class="collapse multi-collapse" id="multiCollapse2">
+                    <p class="mb-1 px-3">
+                        <div class="card-body">
+                            <div class="containerInfo2">
+                                <div class="infolist">
+                                    <div class="card h-100 w-100 my-3 py-2 px-2">
+                                        <h5>Berater Digital Health</h5>
+                                        <ul class="listitem">
+                                            <li>Begleitung und aktive Unterstützung bei der Umsetzung und entsprechenden Projekte vor Ort</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card h-100 w-100 my-3 py-2 px-2">
+                                        <h5>Projektmanager IT & Healthcare</h5>
+                                        <ul class="listitem">
+                                            <li>Weiterentwicklung von bereits bestehenden Geschäftsmodelle und Erweiterung des Partnerstamms</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card h-100 w-100 my-3 py-2 px-2">
+                                        <h5>Consultant Gesundheitsversorgung</h5>
+                                        <ul class="listitem">
+                                            <li>Analyse der Geschäftsprozesse und Evaluierung von Auswirkungen kommender IT-Projekte auf die bestehenden Prozesse/Systeme</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a class="btn btn-primary mt-4" data-bs-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2">weniger anzeigen</a>
+                            </div>
                         </div>
-                        <div class="card h-100 w-100 my-3 py-2 px-2">
-                            <h5>Projektbetreuer E-Health Medication</h5>
-                            <ul>
-                                <li>Planung und Begleitung der Einführung einer systemübergreifenden elektronischen Medikationslösung in unseren Klinikstandorten</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg">
-            <img class="w-50 pt-4" src="img/Ausland.jpg">
-            <div class="fs-2">Stellenangebote im Ausland</div>
-            <div class="fs-5 fst-italic">bei Health for The People</div>
-
-        </div>
     </div>
-    </div>
+    <div class="spaceholder"></div>
+    <footer>
+        <div class="footerelement "><a href="impressum.html ">Impressum</a></div>
+        <div class="footerelement "><a href="kontaktformular.html "> Kontakt</a></div>
+        <div class="footerelement ">Datenschutz</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 
