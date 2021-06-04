@@ -391,3 +391,19 @@ kontaktformular.html */
     height: 500px;
     object-fit: cover;
 }
+
+
+/* 
+quiz.html */
+
+#quizPage1 {
+    display: block;
+}
+
+#quizPage2 {
+    display: none;
+}
+
+#quizPage3 {
+    display: none;
+}
