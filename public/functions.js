@@ -1,8 +1,8 @@
-function quizPage(evt, pageName) {
-    evt.currentTarget.classList.add("active")
+function quizPage(pageName) {
     let quizcontent = document.querySelectorAll(".quizcontent");
-    for (let i = 0; i < tabcontent.length; i++) {
+    for (let i = 0; i < quizcontent.length; i++) {
         quizcontent[i].style.display = "none";
     }
-    document.querySelector("#" + pageName).style.display = "block";
+    let quizpage =  document.querySelector("#"+pageName);
+    quizpage.style.display = "block";
 }
