@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" style="background-image: linear-gradient(to right bottom,  #4d909c,#8ab5c6,  #9fc4d3, #b5d3df,#cae2ec);">
         <img src="img/LogoRund.png" alt="LOGO" id="logo">
         <h1>HFTP - Health for the People</h1>
     </header>
@@ -51,8 +51,8 @@
         </div>
 
     </nav>
-    <div class="container px-4 px-lg-5">
-        <div class="card text-white bg-secondary my-5 py-4 text-center mx-3 ">
+    <div class="container px-lg-5">
+        <div class="card text-white bg-secondary my-5 py-4 text-center ">
             <div class="card-body">
                 <h2 class="card-title">Wusstest du schon?</h2>
                 <p class="text-white m-0">Wusstest du schon, dass 61% der Versicherten Deutschland bei digialen Technologien für gut aufgestellt halten?</p>
@@ -60,8 +60,8 @@
         </div>
     </div>
     <div class="container px-4 px-lg-5">
-        <div class="list-group w-100 px-3">
-            <a class="list-group-item list-group-item-action flex-column align-items-start my-3" data-bs-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">
+        <div class="list-group w-100 ">
+            <div class="list-group-item list-group-item-action flex-column align-items-start my-3">
                 <div class="d-flex w-100  justify-content-between">
                     <h3 class="mb-1">Automatische Analyse der Gefäße im Gehirn</h3>
                     <small>2 days ago </small>
@@ -102,19 +102,24 @@
                         ist durchzogen von Gefäßen – und die Analyse ihrer Struktur hilft dabei, das Stadium eines Tumors zu bestimmen. „Vielleicht kann sich das auf die Optimierung der Therapie auswirken." Der Biologe will die neue Methode auch anwenden,
                         um eines Tages seine Vision wahrzumachen, menschliche Organe im 3D-Drucker herstellen zu lassen. Eine der vielen Voraussetzungen dafür: die genaue Struktur der Gefäße in einem Organ zu kennen.
                     </p><br>
-                    <span class="btn btn-secondary w-25 my-3" data-bs-toggle="collapse" role="none" aria-controls="multiCollapse1" href="#multiCollapse1">weniger anzeigen</span>
                 </div>
-            </a>
-            <div class="list-group-item list-group-item-action flex-column align-items-start my-3">
-                <div class="d-flex w-100 justify-content-between">
-                    <h3 class="mb-1">Umfrage zum Stand der Digitalisierung im Gesundheitssystem</h3>
-                    <small>5 days ago </small>
-                </div>
-                <a class="btn btn-secondary my-2" href="umfrage.html">Hier klicken zum Teilnehmen</a>
-
-
+                <a class="btn btn-secondary w-25 my-3" href="#multiCollapse1" data-bs-toggle="collapse" role="button" aria-controls="multiCollapse1">Anzeigen</a>
             </div>
-            <a class="list-group-item list-group-item-action flex-column align-items-start my-3" data-bs-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2">
+        </div>
+
+
+
+        <div class="list-group-item list-group-item-action flex-column align-items-start my-3">
+            <div class="d-flex w-100 justify-content-between">
+                <h3 class="mb-1">Umfrage zum Stand der Digitalisierung im Gesundheitssystem</h3>
+                <small>5 days ago </small>
+            </div>
+            <a class="btn btn-secondary my-2" href="umfrage.html">Hier klicken zum Teilnehmen</a>
+
+
+        </div>
+        <div>
+            <div class="list-group-item list-group-item-action flex-column align-items-start my-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h3 class="mb-1">Forschungsprojekt: Digitale Biopsie gegen Krebs</h3>
                     <small>3 days ago </small>
@@ -141,10 +146,13 @@
                     <p class="mb-1 px-3">Jedes Jahr erkranken in Deutschland etwa eine halbe Million Menschen an bösartigen Tumorerkrankungen. In den vergangenen Jahren hat die Entwicklung neuer hochwirksamer Medikamente die Behandlung vieler Tumore bereits tiefgreifend verändert
                         und völlig neue Chancen im Kampf gegen den Krebs eröffnet. </p> <br>
 
-                    <span class="btn btn-secondary w-25 my-3" data-bs-toggle="collapse" role="none" aria-controls="multiCollapse2" href="#multiCollapse2">weniger anzeigen</span>
+
                 </div>
-            </a>
-            <a class="list-group-item list-group-item-action flex-column align-items-start my-3" data-bs-toggle="collapse" href="#multiCollapse3" role="button" aria-expanded="false" aria-controls="multiCollapse3">
+                <a class="btn btn-secondary w-25 my-3" data-bs-toggle="collapse" role="button" aria-controls="multiCollapse2" href="#multiCollapse2">Anzeigen</a>
+
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start my-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h3 class="mb-1">Künstliche Intelligenz erkennt Blutkrebs</h3>
                     <small>5 days ago </small>
@@ -186,9 +194,10 @@
                         die schnellstmöglich behandelt werden sollte. „Mit einem Bluttest, so wie er auf der Grundlage unserer Studie möglich scheint, wäre es denkbar, dass bereits der Hausarzt einen Verdacht auf AML abklärt. Und wenn sich dieser erhärtet,
                         an einen Spezialisten überweist. Die Diagnose würde dann möglicherweise früher erfolgen als bisher und die Therapie könnte früher beginnen."
                     </p>
-                    <span class="btn btn-secondary w-25 my-3" data-bs-toggle="collapse" role="none" aria-controls="multiCollapse3" href="#multiCollapse3">weniger anzeigen</span>
+
                 </div>
-            </a>
+                <a class="btn btn-secondary w-25 my-3" data-bs-toggle="collapse" role="button" aria-controls="multiCollapse3" href="#multiCollapse3">weniger anzeigen</a>
+            </div>
         </div>
     </div>
 

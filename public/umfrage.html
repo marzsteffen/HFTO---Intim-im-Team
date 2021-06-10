@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" style="background-image: linear-gradient(to right bottom,  #4d909c,#8ab5c6,  #9fc4d3, #b5d3df,#cae2ec);">
         <img src="img/LogoRund.png" alt="LOGO" id="logo">
         <h1>HFTP - Health for the People</h1>
     </header>
@@ -51,85 +51,135 @@
             </div>
         </div>
     </nav>
-    <div class="container mx-3 my-3">
-        <button  onclick="quizPage('quizPage1')">GO</button>
-        <div id="quizPage1" class="quizcontent">
+    <div class="container px-4 px-lg-5 py-5">
+        <div id="umfragePage1" class="umfragecontent">
             <form>
-                <h3>Frage 1</h3>
-                <ul>
+                <h3>Wie empfinden sie den derzeitigen Stand der Digitalisierung in unserem Gesundheitssystem?</h3>
+                <hr style="background-image: linear-gradient(to right bottom,  #1b5964,#4d8ca5,  #73bcda, #252627,#15181a);">
+                <ul class="px-1" style="list-style-type: none;">
                     <li class="py-2">
                         <input type="radio" name="antwort" id="f1a1">
-                        <label for="f1a1">Antwort 1</label>
+                        <label for="f1a1">Sehr gut</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort " id="f1a2">
-                        <label for="f1a2">Antwort 2</label>
+                        <input type="radio" name="antwort" id="f1a2">
+                        <label for="f1a2">Gut</label>
                     </li>
                     <li class="py-2">
                         <input type="radio" name="antwort" id="f1a3">
-                        <label for="f1a3">Antwort 3</label>
+                        <label for="f1a3">Ausbaufähig</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort " id="f1a4">
-                        <label for="f1a4">Antwort 4</label>
+                        <input type="radio" name="antwort" id="f1a4">
+                        <label for="f1a4">Schlecht</label>
                     </li>
                 </ul>
-                <button onclick="quizPage('quizPage2')">Weiter</button>
+                <span class="btn btn-secondary" onclick="umfragePage('umfragePage2')">Weiter</span>
+            </form>
+
+        </div>
+
+        <div id="umfragePage2" class="umfragecontent">
+            <form>
+                <h3>Sehen sie die Digitalisierung als Chance für eine optimierte Gesundheitsversorgung?</h3>
+                <hr style="background-image: linear-gradient(to right bottom,  #1b5964,#4d8ca5,  #73bcda, #252627,#15181a);">
+                <ul class="px-1" style="list-style-type: none;">
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f2a1">
+                        <label for="f1a1">Ja</label>
+                    </li>
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f2a2">
+                        <label for="f1a2">Ich bin mir nicht sicher</label>
+                    </li>
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f2a3">
+                        <label for="f1a3">Nein</label>
+                    </li>
+                </ul>
+                <span class="btn btn-secondary" onclick="umfragePage('umfragePage3')">Weiter</span>
 
             </form>
         </div>
 
-        <div id="quizPage2" class="quizcontent">
+        <div id="umfragePage3" class="umfragecontent">
             <form>
-                <h3>Frage 2</h3>
-                <ul>
+                <h3>Sorgen Sie sich um Datenschutz?</h3>
+                <hr style="background-image: linear-gradient(to right bottom,  #1b5964,#4d8ca5,  #73bcda, #252627,#15181a);">
+                <ul class="px-1" style="list-style-type: none;">
                     <li class="py-2">
-                        <input type="radio" name="antwort" id="f1a1">
-                        <label for="f1a1">Antwort 1</label>
+                        <input type="radio" name="antwort" id="f3a1">
+                        <label for="f1a1">Ja sehr!</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort " id="f1a2">
-                        <label for="f1a2">Antwort 2</label>
+                        <input type="radio" name="antwort" id="f3a2">
+                        <label for="f1a2">Etwas</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort" id="f1a3">
-                        <label for="f1a3">Antwort 3</label>
-                    </li>
-                    <li class="py-2">
-                        <input type="radio" name="antwort " id="f1a4">
-                        <label for="f1a4">Antwort 4</label>
+                        <input type="radio" name="antwort" id="f3a3">
+                        <label for="f1a3">Nein</label>
                     </li>
                 </ul>
-                <button onclick="quizPage('quizPage3')">Weiter</button>
+                <span class="btn btn-secondary" onclick="umfragePage('umfragePage4')">Weiter</span>
 
             </form>
         </div>
 
-        <div id="quizPage3" class="quizcontent">
+        <div id="umfragePage4" class="umfragecontent">
             <form>
-                <h3>Frage 3</h3>
-                <ul>
+                <h3>Sind sie bereits mit digitalen Lösungen im Gesundheitswesen konfrontiert worden?</h3>
+                <hr style="background-image: linear-gradient(to right bottom,  #1b5964,#4d8ca5,  #73bcda, #252627,#15181a);">
+                <ul class="px-1" style="list-style-type: none;">
                     <li class="py-2">
-                        <input type="radio" name="antwort" id="f1a1">
-                        <label for="f1a1">Antwort 1</label>
+                        <input type="radio" name="antwort" id="f4a1">
+                        <label for="f1a1">Ja</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort " id="f1a2">
-                        <label for="f1a2">Antwort 2</label>
+                        <input type="radio" name="antwort" id="f4a2">
+                        <label for="f1a2">Schön öfters</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort" id="f1a3">
-                        <label for="f1a3">Antwort 3</label>
+                        <input type="radio" name="antwort" id="f4a3">
+                        <label for="f1a3">Teilweise</label>
                     </li>
                     <li class="py-2">
-                        <input type="radio" name="antwort " id="f1a4">
-                        <label for="f1a4">Antwort 4</label>
+                        <input type="radio" name="antwort" id="f4a4">
+                        <label for="f1a3">Garnicht</label>
                     </li>
                 </ul>
-                <button onclick="quizPage('quizpage1')">Weiter</button>
+                <span class="btn btn-secondary" onclick="umfragePage('umfragePage5')">Weiter</span>
 
             </form>
         </div>
+
+        <div id="umfragePage5" class="umfragecontent">
+            <form>
+                <h3>Sind sie bereits mit digitalen Lösungen im Gesundheitswesen konfrontiert worden?</h3>
+                <hr style="background-image: linear-gradient(to right bottom,  #1b5964,#4d8ca5,  #73bcda, #252627,#15181a);">
+                <ul class="px-1" style="list-style-type: none;">
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f5a1">
+                        <label for="f1a1">Ja</label>
+                    </li>
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f5a2">
+                        <label for="f1a2">Schön öfters</label>
+                    </li>
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f5a3">
+                        <label for="f1a3">Teilweise</label>
+                    </li>
+                    <li class="py-2">
+                        <input type="radio" name="antwort" id="f5a4">
+                        <label for="f1a3">Garnicht</label>
+                    </li>
+                </ul>
+                <span class="btn btn-secondary" onclick="umfragePage('umfragePage6')">Weiter</span>
+
+            </form>
+        </div>
+
+        <div id="umfragePage6" class="umfragecontent">Danke für die Teilnahme!</div>
 
     </div>
 

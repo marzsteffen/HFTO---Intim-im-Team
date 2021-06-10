@@ -394,10 +394,38 @@ kontaktformular.html */
 
 
 /* 
+umfrage.html */
+
+#umfragePage1 {
+    display: block;
+}
+
+#umfragePage2 {
+    display: none;
+}
+
+#umfragePage3 {
+    display: none;
+}
+
+#umfragePage4 {
+    display: none;
+}
+
+#umfragePage5 {
+    display: none;
+}
+
+#umfragePage6 {
+    display: none;
+}
+
+
+/* 
 quiz.html */
 
 #quizPage1 {
-    display: none;
+    display: block;
 }
 
 #quizPage2 {
@@ -406,4 +434,28 @@ quiz.html */
 
 #quizPage3 {
     display: none;
+}
+
+#quizPage4 {
+    display: none;
+}
+
+#quizPage5 {
+    display: none;
+}
+
+#quizPage6 {
+    display: none;
+}
+
+.listElement {
+    border: rgb(161, 206, 206);
+    border-style: groove;
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px
+}
+
+.listElement:hover {
+    background-color: #cae2ec;
 }
