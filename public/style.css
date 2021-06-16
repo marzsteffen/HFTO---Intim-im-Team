@@ -459,3 +459,7 @@ quiz.html */
 .listElement:hover {
     background-color: #cae2ec;
 }
+
+#right {
+    display: none;
+}
