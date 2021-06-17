@@ -42,9 +42,9 @@ function quizPage(pageName) {
 
         }
         document.querySelector("#" + pageName).style.display = "block";
-        if (checked1) {
+        if (checked1 || checked5 || checked8 || checked12 || checked14) {
             points++;
-            document.querySelector('#right').style.display = "block";
+            window.alert(points);
         }
     }
 }
