@@ -6,12 +6,39 @@ function umfragePage(pageName) {
     }
     document.querySelector("#" + pageName).style.display = "block";
     results();
-
+    document.querySelectorAll(".umfragecontent")
 }
 
-function results() {
+function umfrageResults(pageName){
+    umfragePage(pageName);
 
+    let f1a1= document.querySelector("#f1a1").checked;
+    let f1a2= document.querySelector("#f1a2").checked;
+    let f1a3= document.querySelector("#f1a3").checked;
+    let f1a4= document.querySelector("#f1a4").checked;
+    let f1a1= document.querySelector("#f1a1").checked;
+    let f1a2= document.querySelector("#f1a2").checked;
+    let f1a3= document.querySelector("#f1a3").checked;
+    let f1a1= document.querySelector("#f1a1").checked;
+    let f1a2= document.querySelector("#f1a2").checked;
+    let f1a3= document.querySelector("#f1a3").checked;
+    let f1a1= document.querySelector("#f1a1").checked;
+    let f1a2= document.querySelector("#f1a2").checked;
+    let f1a3= document.querySelector("#f1a3").checked;
+    let f1a4= document.querySelector("#f1a4").checked;
+    let f1a1= document.querySelector("#f1a1").checked;
+    let f1a2= document.querySelector("#f1a2").checked;
+    let f1a3= document.querySelector("#f1a3").checked;
+    let f1a4= document.querySelector("#f1a4").checked;
+
+    if(f1a1){
+        document.querySelector("")
+    }
 }
+
+
+
+
 
 let points = 0;
 
