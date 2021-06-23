@@ -5,12 +5,12 @@ function umfragePage(pageName) {
         umfragecontent[i].style.display = "none";
     }
     document.querySelector("#" + pageName).style.display = "block";
-    results();
-    document.querySelectorAll(".umfragecontent")
+    
 }
 
 function umfrageResults(pageName){
-    umfragePage(pageName);
+    
+    
 
     let u1a1= document.querySelector("#u1a1").checked;
     let u1a2= document.querySelector("#u1a2").checked;
@@ -29,20 +29,67 @@ function umfrageResults(pageName){
     let u5a1= document.querySelector("#u5a1").checked;
     let u5a2= document.querySelector("#u5a2").checked;
     let u5a3= document.querySelector("#u5a3").checked;
-    let u5a4= document.querySelector("#u5a4").checked;
 
-    if(u1a1){
-        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als sehr gut";
+
+    
+    
+    if(u1a1==true){
+        document.querySelector("#antwort1").innerHTML = "Antwort: Ich empfinde den derzeitigen Stand als sehr gut";
     }
-    if(u1a2){
-        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als gut";
+    if(u1a2==true){
+        document.querySelector("#antwort1").innerHTML = "Antwort: Ich empfinde den derzeitigen Stand als gut";
     }
-    if(u1a3){
-        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als ausbaufähig";
+    if(u1a3==true){
+        document.querySelector("#antwort1").innerHTML = "Antwort: Ich empfinde den derzeitigen Stand als ausbaufähig";
     }
-    if(u1a4){
-        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als sehr gut";
+    if(u1a4==true){
+        document.querySelector("#antwort1").innerHTML = "Antwort: Ich empfinde den derzeitigen Stand als schlecht";
     }
+    if(u2a1==true){
+        document.querySelector("#antwort2").innerHTML = "Antwort: Ja, sie ist eine Chance";
+    }
+    if(u2a2==true){
+        document.querySelector("#antwort2").innerHTML = "Antwort: Ich bin mir nicht sicher";
+    }
+    if(u2a3==true){
+        document.querySelector("#antwort2").innerHTML = "Antwort: Nein, sie ist keine Chance";
+    }
+    if(u3a1==true){
+        document.querySelector("#antwort3").innerHTML = "Antwort: Ja, ich sorge mich um Datenschutz";
+    }
+    if(u3a2==true){
+        document.querySelector("#antwort3").innerHTML = "Antwort: Ich sorge mich etwas um Datenschutz";
+    }
+    if(u3a3==true){
+        document.querySelector("#antwort3").innerHTML = "Antwort: Nein, Datenschutz macht mir keine Sorge";
+    }
+    if(u4a1==true){
+        document.querySelector("#antwort4").innerHTML = "Antwort: Ja, fast jeden Arztbesuch";
+    }
+    if(u4a2==true){
+        document.querySelector("#antwort4").innerHTML = "Antwort: Jeden 3. bis 5. Arztbesuch";
+    }
+    if(u4a3==true){
+        document.querySelector("#antwort4").innerHTML = "Antwort: Teilweise";
+    }
+    if(u4a4==true){
+        document.querySelector("#antwort4").innerHTML = "Antwort: Nein, ich wurde noch nicht damit konfrontiert";
+    }
+    if(u5a1==true){
+        document.querySelector("#antwort5").innerHTML = "Antwort: Ja, eine ethische Richtlinie ist wichtig!";
+    }
+    if(u5a2==true){
+        document.querySelector("#antwort5").innerHTML = "Antwort: Eine ethische Richtlinie ist nicht so wichtig";
+    }
+    if(u5a3==true){
+        document.querySelector("#antwort5").innerHTML = "Antwort: Nein, eine etische Richtlinie ist nicht nötig";
+    }
+    
+    let umfragecontent = document.querySelectorAll(".umfragecontent");
+    for (let i = 0; i < umfragecontent.length; i++) {
+        umfragecontent[i].style.display = "none";
+    }
+    document.querySelector("#" + pageName).style.display = "block";
 }
 
 
