@@ -12,27 +12,36 @@ function umfragePage(pageName) {
 function umfrageResults(pageName){
     umfragePage(pageName);
 
-    let f1a1= document.querySelector("#f1a1").checked;
-    let f1a2= document.querySelector("#f1a2").checked;
-    let f1a3= document.querySelector("#f1a3").checked;
-    let f1a4= document.querySelector("#f1a4").checked;
-    let f1a1= document.querySelector("#f1a1").checked;
-    let f1a2= document.querySelector("#f1a2").checked;
-    let f1a3= document.querySelector("#f1a3").checked;
-    let f1a1= document.querySelector("#f1a1").checked;
-    let f1a2= document.querySelector("#f1a2").checked;
-    let f1a3= document.querySelector("#f1a3").checked;
-    let f1a1= document.querySelector("#f1a1").checked;
-    let f1a2= document.querySelector("#f1a2").checked;
-    let f1a3= document.querySelector("#f1a3").checked;
-    let f1a4= document.querySelector("#f1a4").checked;
-    let f1a1= document.querySelector("#f1a1").checked;
-    let f1a2= document.querySelector("#f1a2").checked;
-    let f1a3= document.querySelector("#f1a3").checked;
-    let f1a4= document.querySelector("#f1a4").checked;
+    let u1a1= document.querySelector("#u1a1").checked;
+    let u1a2= document.querySelector("#u1a2").checked;
+    let u1a3= document.querySelector("#u1a3").checked;
+    let u1a4= document.querySelector("#u1a4").checked;
+    let u1a1= document.querySelector("#u2a1").checked;
+    let u1a2= document.querySelector("#u2a2").checked;
+    let u1a3= document.querySelector("#u2a3").checked;
+    let u1a1= document.querySelector("#u3a1").checked;
+    let u1a2= document.querySelector("#u3a2").checked;
+    let u1a3= document.querySelector("#u3a3").checked;
+    let u1a1= document.querySelector("#u4a1").checked;
+    let u1a2= document.querySelector("#u4a2").checked;
+    let u1a3= document.querySelector("#u4a3").checked;
+    let u1a4= document.querySelector("#u4a4").checked;
+    let u1a1= document.querySelector("#u5a1").checked;
+    let u1a2= document.querySelector("#u5a2").checked;
+    let u1a3= document.querySelector("#u5a3").checked;
+    let u1a4= document.querySelector("#u5a4").checked;
 
-    if(f1a1){
-        document.querySelector("")
+    if(u1a1){
+        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als sehr gut";
+    }
+    if(u1a2){
+        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als gut";
+    }
+    if(u1a3){
+        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als ausbaufähig";
+    }
+    if(u1a4){
+        document.querySelector("#antwort1").innerHTML = "Ich empfinde den derzeitigen Stand als sehr gut";
     }
 }
 
@@ -42,10 +51,8 @@ function umfrageResults(pageName){
 
 let points = 0;
 
-
-
-
 function quizPage2(pageName) {
+    window.alert("asas");
     let quizcontent = document.querySelectorAll(".quizcontent");
     let checked1 = document.querySelector("#f1a1").checked;
     let checked2 = document.querySelector("#f1a2").checked;
