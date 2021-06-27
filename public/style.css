@@ -448,6 +448,10 @@ quiz.html */
     display: none;
 }
 
+#zurückButton {
+    display: none;
+}
+
 .listElement {
     border: rgb(161, 206, 206);
     border-style: groove;
